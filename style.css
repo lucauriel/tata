@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+html{
+scroll-behavior: smooth;
+}
+.max-width{
+max-width: 1300px;
+padding: 0 80px;
+margin: auto;
+}
+
+/* menu btn styling */
+.menu-btn{
+color: #fff;
+font-size: 23px;
+cursor: pointer;
+display: none;
+}
+.scroll-up-btn{
+position: fixed;
+height: 45px;
+width: 42px;
+background: crimson;
+right: 30px;
+bottom: 10px;
+text-align: center;
+line-height: 45px;
+color: #fff;
+z-index: 9999;
+font-size: 30px;
+border-radius: 6px;
+cursor: pointer;
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+bottom: 30px;
+opacity: 1;
+pointer-events: auto;
+}
+
+.bg{
+    display: flex;
+    background: url("images/birthday/5155371.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: rgb(7, 6, 6);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    /* position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 100%; */
+}
+/* home section styling */
+.home{
+display: flex;
+background: #ffe5d9;
+background-size: cover;
+background-attachment: fixed;
+height: 100vh;
+color: rgb(7, 6, 6);
+font-family: 'Ubuntu', sans-serif;
+/* position: fixed;
+width: 100%;
+height: 100%;
+background-size: 100%; */
+}
+.home .max-width{
+margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+font-size: 50px;
+text-align: justify;
+}
+.home .home-content .text-3{
+font-size: 27px;
+text-align: justify;
+}
+.home .home-content .text-js{
+font-size: 40px;
+margin: 5px 0;
+text-align: justify;
+}
+.home .home-content .text-js span{
+color: crimson;
+font-weight: 500;
+}
+.home .home-content btn btn-primary{
+display: inline-block;
+background-color: crimson;
+color: #fff;
+font-size: 25px;
+padding: 12px 36px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid crimson;
+transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+color: black;
+background: none;
+border: 2px solid black;
+}
+/* button styling */
+.btn-primary {
+    border-color: #e60c0c;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #d41010;
+}
+/* greet styling */
+.greet .greet-content .left{
+    width: 45%;
+}
+.greet .greet-content .left img{
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.greet .greet-content .right .text span{
+    color: rebeccapurple;
+}
+.greet .greet-content .right p{
+    text-align: justify;
+}
+/* cricket styling */
+
+.cric .cric-content .left img{
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.cric .cric-content .right p{
+    text-align: justify;
+}
+/* you styling */
+.you{
+    color: #fff;
+    background: #111;
+}
+.you .title{
+    text-align: center;
+    padding-top: 50px;
+    margin: 50px;
+}
+.you .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.you .carousel .card:hover{
+    background: crimson;
+}
+.you .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.you .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.you .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.you .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+.you .carousel .card:hover img{
+    border-color: #fff;
+    transition: all 0.3s ease;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson !important;
+}
+
+
+/* media querry */
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1104px){
+    .greet .greet-content .left img{
+        height: 230px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1104px){
+    .cric .cric-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 500px){
+    .home .home-content .text-1{
+        font-size: 40px;
+    }
+    .home .home-content .text-js{
+        font-size: 27px;
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+}

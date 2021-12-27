@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy, tata</title>
+    <link rel="shortcut icon" href="images/1975.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="servicestyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+
+    <script src='script.js'></script>
+    <!--<audio class="song" controls loop>
+        <source src="bd2.mp3">
+    </audio>
+    <script src='script.js'></script> -->
+
+    <section class="bg" id="bg">
+
+
+    </section>
+
+    <!-- Home Section Start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Happy <span>Birthday </span></div>
+                <div class="text-js"><span class="typing"></span></div>
+                <!-- <a href="https://www.instagram.com/davonar_/">Play Birthday Party by 1975</a> -->
+
+                <div class="text-3">Listen kid, I want you to be the happiest girl today. and i suck at making people
+                    happy.
+                    <p>This is probably the only gift i can give you, my words.</p>
+                    <p>I will be there with you in your heart and soul whenever you seek me. I love you.</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="toggleMusic()" id="btn-playback" data-play="false">
+                <i class="fa fa-play"></i>
+                <span id="btn-text">Play Music</span>
+            </button>
+            <audio id="audio" src="bd2.mp3" />
+            <script>
+                const myAudio = document.getElementById("audio");
+                const btn = document.getElementById("btn-playback");
+                const btnIcon = document.querySelector("#btn-playback > i");
+                const btnText = document.getElementById("btn-text");
+
+                const toggleMusic = () => {
+                    const dataPlay = btn.getAttribute('data-play');
+
+                    if (dataPlay === 'false') {
+                        btn.setAttribute('data-play', 'true');
+                        myAudio.play();
+                        btnIcon.classList.remove("fa-play");
+                        btnIcon.classList.add("fa-pause");
+                        btnText.innerText = "PAUSE";
+                    } else {
+                        btn.setAttribute('data-play', 'false');
+                        myAudio.pause();
+                        btnIcon.classList.remove("fa-pause");
+                        btnIcon.classList.add("fa-play");
+                        btnText.innerText = "PLAY";
+                    }
+                };
+
+                myAudio.onpause = () => {
+                    btn.setAttribute('data-play', 'false');
+                    myAudio.pause();
+                    btnIcon.classList.remove("fa-pause");
+                    btnIcon.classList.add("fa-play");
+                    btnText.innerText = "PLAY";
+                };
+            </script>
+    </section>
+
+    <!-- Greeting Section-->
+    <section class="greet" id="greet">
+        <div class="max-width">
+            <h2 class="title">Greetings.</h2>
+            <div class="greet-content">
+                <div class="column left">
+                    <img src="dita/pi.png" alt="">
+                </div>
+                <div class="colum right">
+                    <div class="text">Hi ! <span class="typing-2"></span></div>
+                    <p>In honest way, I don’t kow what to do when someone have birthdays, give some gifts?, sing a
+                        birthday song?, give some foods?, yeup I don’t know what to do. As I said before I stuck at
+                        making people happy, and this is probably the only gift I can give to you, my words, and some
+                        records of our memories.
+
+                    <p>I know my words is not as beautifull as taylor swift’s red album, but I always try to do my
+                        best. Always.</p>
+
+                    <p>Just in case you wanna know, I’ve been thinking to made this for about 3-4 months before your
+                        birthday, yep 3-4 month thinking what I need to do, what I want to do at your birthday, but
+                        today on 20th November I started to working this birthday web project, I started to write this
+                        post, I started to finding some simple design for it because I’m not good at design hahahahaha,
+                        and I know this one is not good as supposed to be, day-by-day when I’m working this, I imagine
+                        and how you will react when you see this, but I hope you happy.</p>
+
+                    <p>The hardest part when i'm working this is when we're fighting each and other ego (my ego
+                        hahahaha), and i don't know how are u but, i'm still trying to finish this one. for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Greeting Section END-->
+
+    <!-- Cricket Section-->
+    <section class="cric" id="cric">
+        <div class="max-width">
+            <h2 class="title">Twin Crickets</h2>
+            <div class="cric-content">
+                <div class="column left">
+                    <img src="dita/cricket.jpg" alt="">
+                </div>
+                <div class="colum right">
+                    <p>This item is might be the one and the first thing(s) you gave to me, because I asked for it tho
+                        (lol), and from this cricket you know one of my personality when wisnu was hiding this cricket
+                        when we’re iftar together, I was very panic because you just gave it and I lost it in a few
+                        minutes after :3, and this one proves too that I will take care of gifts from others, no matter
+                        how small it is.
+                    </p>
+
+                    <p>Fun fact that when you said want to give me another cricket of your face and I was request the
+                        photo for the cricket, because this one is oooooooooooooooo VERY CUTE AFFF, not a single lie I
+                        throw to you, but this photo is very cute at the first sight, kayaknya gue juga udah bilang deh
+                        kalo lu jd pacar gue, gue mau ganti header twitter gw pake foto lu yang ini? Awkawkkawawk, gue
+                        nyari ss an pas gue ngomong itu gk ketemu, apa gue ngomong pas kita lagi telponan ya?, gue yakin
+                        lu pasti lupa juga sih…</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cricket Section END-->
+
+    <!-- You Section -->
+    <section class="you" id="you">
+        <div class="max-width">
+            <h2 class="title">the you.</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita2.jpg" alt="">
+                        <div class="text">i like it</div>
+                        <!--<p>send me your pic and some words or your favourite food</p>-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita1.jpg" alt="">
+                        <div class="text">when you sleep</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita3.jpg" alt="">
+                        <div class="text">for you are so</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita4.jpg" alt="">
+                        <div class="text">beautiful</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita5.jpg" alt="">
+                        <div class="text">yet so</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/dita6.jpg" alt="">
+                        <div class="text">unaware</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="dita/ditaa.jpg" alt="">
+                        <div class="text">of it</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- You Section END-->
+</body>
+
+
+</html>
