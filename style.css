@@ -231,14 +231,14 @@ border: 2px solid black;
 @media (max-width: 1104px){
     .greet .greet-content .left img{
         height: 230px;
-        width: 400px;
+        width: 315px;
     }
 }
 
 @media (max-width: 1104px){
     .cric .cric-content .left img{
         height: 350px;
-        width: 350px;
+        width: 315px;
     }
 }
 @media (max-width: 500px){
