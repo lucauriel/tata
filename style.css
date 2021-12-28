@@ -17,7 +17,7 @@ margin: auto;
 
 
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 section .title{
     position: relative;
@@ -206,7 +206,7 @@ border: 2px solid black;
     transition: all 0.3s ease;
 }
 .pi .carousel .card:hover{
-    background: crimson;
+    background: pink;
 }
 .pi .carousel .card .box{
     display: flex;
@@ -223,7 +223,7 @@ border: 2px solid black;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid pink;
 }
 .pi .carousel .card:hover img{
     border-color: #fff;
@@ -267,7 +267,7 @@ border: 2px solid black;
     transition: all 0.3s ease;
 }
 .you .carousel .card:hover{
-    background: crimson;
+    background: pink;
 }
 .you .carousel .card .box{
     display: flex;
@@ -289,7 +289,7 @@ border: 2px solid black;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid pink;
 }
 .you .carousel .card:hover img{
     border-color: #fff;
@@ -316,13 +316,20 @@ border: 2px solid black;
 .owl-dot:hover{
     background: crimson !important;
 }
-.us img{
-    width: 1040px;
-    height: 360px;
+.us .us-content p{
+    text-align: justify;
+
 }
-.us img.port{
-    width: 360px;
-    height: 640px;
+.us img{
+    
+    height: 720px;
+    width: 1280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 6px;
 }
 .us .carousel2 .card {
     background: #222;
@@ -331,7 +338,14 @@ border: 2px solid black;
     text-align: center;
     transition: all 0.3s ease;
 }
-
+/* pov styling */
+.pov .pov-content p{
+    text-align: justify;
+}
+/* sorry styling */
+.sorry .sorry-content p{
+    text-align: justify;
+}
 /* media querry */
 @media (max-width: 1104px){
     .about .about-content .left img{
