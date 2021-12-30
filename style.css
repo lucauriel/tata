@@ -418,6 +418,26 @@ border: 2px solid black;
 @media (max-width: 380px){
     .pi .pi-content .left img{
         height: 230px;
+        width: 300px;
+    }
+    .cric .cric-content .left img{
+        height: 350px;
+        width: 285px;
+    }
+    
+    .cric .cric-content .dita img{
+        height: 350px;
+        width: 280px;
+    }
+    .us img{
+        height: 200px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 450px){
+    .pi .pi-content .left img{
+        height: 230px;
         width: 280px;
     }
     .cric .cric-content .left img{
