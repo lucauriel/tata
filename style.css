@@ -170,10 +170,15 @@ border: 2px solid black;
     text-align: justify;
 }
 .pi .pi-content .left img{
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     height: 500px;
     width: 1000px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .pi .pi-content .satu img{
@@ -232,19 +237,25 @@ border: 2px solid black;
 /* cricket styling */
 
 .cric .cric-content .left img{
+    padding-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
     height: 500px;
     width: 1000px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .cric .cric-content .dita img{
+    padding-bottom: 5px;
     height: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .cric .cric-content .right p{
     text-align: justify;
@@ -320,10 +331,9 @@ border: 2px solid black;
     text-align: justify;
 
 }
-.us img{
-    
-    height: 720px;
-    width: 1280px;
+.us img{  
+    height: 400px;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -385,5 +395,42 @@ border: 2px solid black;
     }
     .home .home-content .text-3{
         font-size: 20px;
+    }
+    
+    .pi .pi-content .left img{
+        height: 250px;
+        width: 400px;
+    }
+    .cric .cric-content .left img{
+        height: 250px;
+        width: 400px;
+    }
+    
+    .cric .cric-content .dita img{
+        height: 250px;
+        width: 250px;
+    }
+    .us img{
+        height: 250px;
+        width: 380px;
+    }
+}
+@media (max-width: 380px){
+    .pi .pi-content .left img{
+        height: 230px;
+        width: 280px;
+    }
+    .cric .cric-content .left img{
+        height: 350px;
+        width: 285px;
+    }
+    
+    .cric .cric-content .dita img{
+        height: 350px;
+        width: 280px;
+    }
+    .us img{
+        height: 200px;
+        width: 280px;
     }
 }
