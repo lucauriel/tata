@@ -267,8 +267,7 @@ border: 2px solid black;
 }
 .you .title{
     text-align: center;
-    padding-top: 50px;
-    margin: 50px;
+    padding-top: 10px;
 }
 .you .carousel .card {
     background: #222;
@@ -352,6 +351,13 @@ border: 2px solid black;
 .pov .pov-content p{
     text-align: justify;
 }
+.pov .pov-content img{
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 /* sorry styling */
 .sorry .sorry-content p{
     text-align: justify;
@@ -385,6 +391,10 @@ border: 2px solid black;
         height: 350px;
         width: 315px;
     }
+    
+    .pov .pov-content .ngeluh img{
+        width: 315px;
+    }
 }
 @media (max-width: 500px){
     .home .home-content .text-1{
@@ -414,6 +424,10 @@ border: 2px solid black;
         height: 250px;
         width: 380px;
     }
+    
+    .pov .pov-content .ngeluh img{
+        width: 285px;
+    }
 }
 @media (max-width: 380px){
     .pi .pi-content .left img{
@@ -433,6 +447,10 @@ border: 2px solid black;
         height: 200px;
         width: 280px;
     }
+    
+    .pov .pov-content .ngeluh img{
+        width: 285px;
+    }
 }
 
 @media (max-width: 450px){
@@ -444,7 +462,9 @@ border: 2px solid black;
         height: 350px;
         width: 285px;
     }
-    
+    .pov .pov-content img{
+        width: 350px;
+    }
     .cric .cric-content .dita img{
         height: 350px;
         width: 280px;
@@ -452,5 +472,8 @@ border: 2px solid black;
     .us img{
         height: 200px;
         width: 280px;
+    }
+    .pov .pov-content .ngeluh img{
+        width: 285px;
     }
 }
